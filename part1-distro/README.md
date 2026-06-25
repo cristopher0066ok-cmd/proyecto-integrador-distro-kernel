@@ -40,6 +40,9 @@
 <img width="403" height="365" alt="image" src="https://github.com/user-attachments/assets/0c01d7a5-eb1c-4f02-8a15-d1bb1b8904d7" />
 <img width="401" height="362" alt="image" src="https://github.com/user-attachments/assets/a00843b3-934f-4c6f-af0a-a33550b4f1dc" />
 <img width="402" height="359" alt="image" src="https://github.com/user-attachments/assets/96c755e4-7a07-4b32-9cd9-c3a35bb842d0" />
+video 
+https://drive.google.com/file/d/1ECSGkoEZiJW7SWxo96z4dzOGNdZ6Zbpk/view?usp=drive_link
+
 
 
 
