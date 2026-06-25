@@ -63,3 +63,10 @@ Places the kernel at physical address `0x100000` (1 MB), safely above the BIOS r
 - [Write Your Own 64-bit OS Kernel #1](https://www.youtube.com/watch?v=FkrpUaGThTQ)
 - [Write Your Own 64-bit OS Kernel #2](https://www.youtube.com/watch?v=wz9CZBeXR6U)
 - [OSDev Wiki — Bare Bones](https://wiki.osdev.org/Bare_Bones)
+
+capture
+<img width="769" height="500" alt="image" src="https://github.com/user-attachments/assets/8f97ec7a-9e3e-47a5-ab8a-88c2c05630a7" />
+
+- video
+- https://drive.google.com/file/d/1EqycGw9xf8Vtew9-5-NHwn_VZBvJhGv2/view?usp=drive_link
+- 
