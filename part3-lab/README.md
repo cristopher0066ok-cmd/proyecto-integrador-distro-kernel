@@ -246,3 +246,6 @@ curl http://172.16.10.12/server-status
 - **WordPress User Enumeration (wp-user-enum):** The WordPress REST API at `/?rest_route=/wp/v2/users/` returns a full JSON profile of the user `jtorres` without any authentication. This is a critical information disclosure — an attacker now has a valid username to use in brute-force or credential stuffing attacks against the WordPress login page (`/wp-login.php`).
 - **Apache Server Status (apache-server-status-localhost):** The `/server-status` endpoint exists on the server. Although it returned 403 in our test, its existence confirms the Apache `mod_status` module is loaded. In a misconfigured server this endpoint leaks real-time request logs, client IPs, and server load — valuable intelligence for an attacker.
 - **Combined impact:** With a valid username (`jtorres`) from the user enumeration and knowledge of the exact Apache and PHP versions from WhatWeb, an attacker has a clear attack path: enumerate more users, attempt password spraying on `/wp-login.php`, and search for CVEs affecting the specific software versions discovered.
+captures
+<img width="1600" height="856" alt="image" src="https://github.com/user-attachments/assets/b20ff5f7-9780-4c63-915e-7ef20d12b99d" />
+<img width="897" height="382" alt="image" src="https://github.com/user-attachments/assets/156e45d6-3023-40f2-967a-31715aeea159" />
