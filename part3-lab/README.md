@@ -197,6 +197,8 @@
 | Cristopher Quisilema | Lab deployment, reconnaissance, FTP exploitation |
 
 ---
+video
+https://drive.google.com/file/d/1pUrNcWwCmJ0CbrQAK-39TNLlND4PwvEm/view?usp=drive_link
 capture
 <img width="440" height="72" alt="image" src="https://github.com/user-attachments/assets/93ec6d1f-1c6f-4bd2-8689-5017e9281bbb" />
 <img width="448" height="44" alt="image" src="https://github.com/user-attachments/assets/40f7d14d-7f62-47fb-a43f-ceb0bb2c451d" />
