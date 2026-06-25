@@ -218,3 +218,31 @@ capture
 - [Nmap Reference Guide](https://nmap.org/book/man.html)
 - [WhatWeb GitHub](https://github.com/urbanadventurer/WhatWeb)
 - [vsftpd Documentation](https://security.appspot.com/vsftpd.html)
+
+---
+
+### Technique 4 — Template-based Vulnerability Scanning with Nuclei (Advanced)
+
+**What it does:** Nuclei runs thousands of community-maintained templates against a target, automatically detecting known vulnerabilities, misconfigurations, and exposed sensitive endpoints. Unlike nmap which finds open ports, Nuclei validates actual vulnerabilities.
+
+**Command:**
+```bash
+nuclei -u http://172.16.10.12 -severity low,medium,high,critical -timeout 10
+```
+
+**Output:**
+**Verification of findings:**
+```bash
+# WordPress user enumeration confirmed:
+curl http://172.16.10.12/?rest_route=/wp/v2/users/
+# Returns: {"id":1,"name":"jtorres","url":"http://172.16.10.12",...}
+
+# Apache server-status returns 403 (restricted but endpoint exists)
+curl http://172.16.10.12/server-status
+# Returns: 403 Forbidden - Apache/2.4.57 (Debian)
+```
+
+**Interpretation:**
+- **WordPress User Enumeration (wp-user-enum):** The WordPress REST API at `/?rest_route=/wp/v2/users/` returns a full JSON profile of the user `jtorres` without any authentication. This is a critical information disclosure — an attacker now has a valid username to use in brute-force or credential stuffing attacks against the WordPress login page (`/wp-login.php`).
+- **Apache Server Status (apache-server-status-localhost):** The `/server-status` endpoint exists on the server. Although it returned 403 in our test, its existence confirms the Apache `mod_status` module is loaded. In a misconfigured server this endpoint leaks real-time request logs, client IPs, and server load — valuable intelligence for an attacker.
+- **Combined impact:** With a valid username (`jtorres`) from the user enumeration and knowledge of the exact Apache and PHP versions from WhatWeb, an attacker has a clear attack path: enumerate more users, attempt password spraying on `/wp-login.php`, and search for CVEs affecting the specific software versions discovered.
