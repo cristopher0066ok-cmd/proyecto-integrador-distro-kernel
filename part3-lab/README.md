@@ -197,6 +197,20 @@
 | Cristopher Quisilema | Lab deployment, reconnaissance, FTP exploitation |
 
 ---
+capture
+<img width="440" height="72" alt="image" src="https://github.com/user-attachments/assets/93ec6d1f-1c6f-4bd2-8689-5017e9281bbb" />
+<img width="448" height="44" alt="image" src="https://github.com/user-attachments/assets/40f7d14d-7f62-47fb-a43f-ceb0bb2c451d" />
+<img width="448" height="101" alt="image" src="https://github.com/user-attachments/assets/8293f73f-f194-44c7-9576-73fcd4951245" />
+<img width="445" height="232" alt="image" src="https://github.com/user-attachments/assets/c927191d-b871-4992-8e00-cc53e464f3ff" />
+<img width="437" height="32" alt="image" src="https://github.com/user-attachments/assets/4a2a430d-fbd4-4dd2-b98a-3c059562220e" />
+<img width="461" height="272" alt="image" src="https://github.com/user-attachments/assets/de1927b1-359b-4954-83ad-c76e30d6acfe" />
+<img width="445" height="88" alt="image" src="https://github.com/user-attachments/assets/634aabec-1e44-4689-8bd0-33e3a7db6a0b" />
+<img width="437" height="175" alt="image" src="https://github.com/user-attachments/assets/406de9e3-94fe-4590-a542-c8b81869e9a0" />
+
+
+
+
+
 
 ## References
 
