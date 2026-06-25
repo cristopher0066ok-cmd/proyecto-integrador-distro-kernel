@@ -1,0 +1,7 @@
+*.iso
+*.bin
+*.o
+dist/
+targets/
+__pycache__/
+*.pyc
